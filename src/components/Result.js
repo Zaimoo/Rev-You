@@ -5,6 +5,7 @@ import OpenAI from 'openai';
 import './css/Result.css';
 import Footer from './Footer';
 import loading from './loading.gif'
+import { Link } from 'react-router-dom';
 
 const Result = () => {
   // test
@@ -63,8 +64,9 @@ const Result = () => {
         <div className="loading-screen"> <img src= {loading} alt='Loading...'></img></div>
       ) : (
         <div className='results'>
+          <h1>Reviewer Created!</h1>
           <div className='reviewer-container' dangerouslySetInnerHTML={{ __html: reviewer }} />
-          <a href='/reviewer-maker'className='green-btn'>Generate Again</a>
+          <Link to='/reviewer-maker'className='green-btn'>Generate Again</Link>
         </div>
       )}
       <Footer />

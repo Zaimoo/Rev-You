@@ -28,8 +28,13 @@
     align-items: center;
   }
 
+  .results h1 {
+    color: #2B5E25;
+  }
+
   .results a {
     text-decoration: none;
+    margin-bottom: 1rem;
   }
   /* Adjustments for print media */
   @media print {

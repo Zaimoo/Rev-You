@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import logo from '../logo.png';
 import name from  '../site-name.png';
+import background from '../login-background.jpg'
 
 const mockAccounts = [
   {
@@ -51,13 +52,13 @@ const Login = () => {
   
     return (
     <>
-    <div className='login-container'>
+    <div className='login-container' style={{ backgroundImage: `url(${background})` }}>
         <div className='login-content'>
           <div className='login-title'>
             <img src={logo} alt='logo'  />
             <img src={name} alt='site-name' />
           </div>
-          
+          {error && <p style={{ color: 'red' }}>{error}</p>}
             <form onSubmit={handleSubmit}>
             <input type="text" placeholder='Username' value={username} onChange={handleUsernameChange} />
             <br />
@@ -71,13 +72,13 @@ const Login = () => {
             <input type= 'checkbox' id='rememberMe'></input>
             <label for='rememberMe'>Remember Me?</label>
             </div>
-            <button type="submit" className='green-btn'>Login</button>
+            <button type="submit" className='green-btn1'>Log In</button>
             </form>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            <p>Don't have a RevYou Account? <span>Register Now!</span></p>
+
         </div>
     </div>
     
-    <Footer />
     </>
       
       

@@ -146,23 +146,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30.3rem;
+    height: 100vh;
   }
 
   .login-content {
-    padding: 20px;
+    background-color: white;
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    border: 2px dashed #D0D0D0;
+    border-radius: 20px;
   }
 
   .login-content input {
     margin-bottom: 1rem;
-    height: 2rem;
-    width: 20rem;
-    border: 1px solid rgb(207, 207, 207);
+    height: 2.5rem;
+    width: 23rem;
+    border: 2px solid #9BD046;
     border-radius: 8px;
     padding: 0.2rem 0.5rem;
+  }
+
+  .login-content input::placeholder {
+    color: #9BD046;
+    font-weight: 600;
+    font-size: medium;
   }
 
   .login-content .forgot-password {
@@ -172,13 +178,13 @@
 
   .login-content .remember-me {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    align-items: flex-end;
+    margin-bottom: 0rem;
   }
 
   .login-content input#rememberMe{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     margin-bottom: 0rem;
     padding: 0rem;
   }
@@ -186,14 +192,31 @@
 
   .login-content input:focus {
     outline: none;
-    border: 1px solid #9BD046;
+    border: 2px solid #9BD046;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .login-content .green-btn {
+  .login-content .green-btn1 {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1rem;
     border: none;
     width: 100%;
-    padding: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: #baff4d;
+    border: 2px solid #9BD046;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: x-large;
+    color: #2B5E25;
+  }
+
+  .login-content p {
+    color: #2B5E25;
+    text-align: center;
+  }
+
+  .login-content span {
+    font-weight: bold;
   }
   
   .logged-in-container {

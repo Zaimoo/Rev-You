@@ -1,6 +1,6 @@
 .footer {
     background-color: #DCFAC7;
-    padding: 0 20rem;
+    padding: 0 25rem;
     border-top: 2px dotted #409450;
   }
   
@@ -12,8 +12,9 @@
   
   .footer-section h4 {
     color: #2B5E25;
+    margin-bottom: 0;
   }
-  
+
   .footer-section ul {
     list-style: none;
     padding: 0;
@@ -22,7 +23,11 @@
   .footer-section ul li a {
     color: rgb(43, 94, 37);
     text-decoration: none;
-    line-height: 2;
+    line-height: 1.5;
+  }
+
+  .footer-section ul li p {
+    line-height: 0.5;
   }
   
   .footer-bottom {

@@ -9,7 +9,6 @@ const Footer = () => {
             <h4>Resources</h4>
             <ul>
               <li><Link to="/help">Help</Link></li>
-              <li><Link to="/tutorials">Tutorials</Link></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service">Terms of Service</Link></li>
             </ul>
@@ -17,15 +16,17 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Company</h4>
             <ul>
-              <li><Link to="/Linkbout">About Us</Link></li>
+              <li><Link to="/about">About Us</Link></li>
               <li><Link to="/values">Our Values</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Contact Information</h4>
-            <p>Email: RevYou@gmail.com</p>
-            <p>Phone: +63 906 737 8470</p>
+            <ul>
+            <li><p>Email: RevYou@gmail.com</p></li>
+            <li><p>Phone: +63 906 737 8470</p></li>
+            </ul>
+           
             <div className="social-icons">
 
             </div>
