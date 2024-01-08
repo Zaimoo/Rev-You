@@ -7,18 +7,18 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Resources</h4>
             <ul>
-              <li><a href="/help">Help</a></li>
-              <li><a href="/tutorials">Tutorials</a></li>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><Link to="/help">Help</Link></li>
+              <li><Link to="/tutorials">Tutorials</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service">Terms of Service</Link></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Company</h4>
             <ul>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/values">Our Values</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><Link to="/Linkbout">About Us</Link></li>
+              <li><Link to="/values">Our Values</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>
           <div className="footer-section">
