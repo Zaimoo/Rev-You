@@ -14,7 +14,7 @@ const Result = () => {
 
   const generateResponse = useCallback(async () => {
     const openai = new OpenAI({
-      apiKey: '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',
+      apiKey: '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',
       dangerouslyAllowBrowser: true
     });
 
