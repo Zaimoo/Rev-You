@@ -1,0 +1,56 @@
+/* Result.css */
+.result-container {
+    display: block;
+    padding: 20px;
+    background: #f4f4f4; /* A light gray background to contrast with the 'paper' */
+    height: 100%;
+    min-height: 38rem;
+  }
+
+  .reviewer-container {
+    background: white;
+    column-count: 2;
+    width: 10in;
+    height: fit-content;
+    padding: 1in;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Simulates the slight shadow of a paper */
+  }
+  
+  .loading-screen {
+    text-align: center;
+    justify-content: center;
+    height: 38rem;
+  }
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .results a {
+    text-decoration: none;
+  }
+  /* Adjustments for print media */
+  @media print {
+    .result-container {
+      padding: 0;
+      background: white;
+    }
+  
+    .reviewer-container {
+      box-shadow: none;
+      margin: 0;
+      padding: 0.5in; /* Typically, less padding is preferable when printing */
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .reviewer-container {
+      width: 90%; /* Adjusts width for smaller screens */
+      min-height: unset;
+      padding: 5%; /* Adjusts padding for smaller screens */
+    }
+  }
+  

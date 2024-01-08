@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+    overflow: auto;
+    min-height: 100vh;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-buttons button{
+    margin-right: 1rem;
   }
-}
+
+  .trans-btn {
+    background-color: #ffffff;
+    padding: 0.7rem 2rem;
+    border: 2px solid #9BD046;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: large;
+    color: #9BD046;
+  }
+
+  .green-btn {
+    background-color: #9BD046;
+    padding: 0.7rem 2rem;
+    border: 2px solid #9BD046;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: large;
+    color: white;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-navigation-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .container img{
+    height: 3rem;
+  }
+  
+  
+  .navbar ul {
+    margin-left: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    padding: 1em 1em;
+    cursor: pointer;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+    color: #9BD046;
+  }
+
+  .navbar a.active {
+    color: #2B5E25;
+  }
+
+
+  .main-content {
+    display: flex;
+    min-height: 37rem;
+    background-color: #fff; /* Replace with the main content background color from your images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #2B5E25;
+    font-size: larger;
+  }
+
+  .main-content h1 {
+    color: #2B5E25;
+  }
+
+  .main-content a {
+    text-decoration: none;
+  }
+
+  
+  /* Footer styles */
+  .footer {
+    background-color: #DCFAC7; /* Replace with the footer background color from your images */
+    text-align: center;
+  }
+  
+  .footer p {
+    color: #264C15;
+  }
+
+  table {
+    width: 100%; /* Full-width table */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 1em 0; /* Spacing above and below the table */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent with other elements */
+    background-color: #fff; /* White background for the table */
+  }
+  
+  th, td {
+    text-align: left; /* Align text to the left in table headers and cells */
+    padding: 12px; /* Padding within cells */
+    border-bottom: 1px solid #ddd; /* A line under each row */
+  }
+  
+  th {
+    background-color: #f4f4f4; /* A slightly different background for headers */
+    color: #333; /* Dark text for contrast */
+    font-weight: 600; /* Slightly bolder font for headers */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+  }
+
+  tr:hover {
+    background-color: #e8e8e8;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30.3rem;
+  }
+
+  .login-content {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px dashed #D0D0D0;
+  }
+
+  .login-content input {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 20rem;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 8px;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .login-content .forgot-password {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login-content .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .login-content input#rememberMe{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
+  }
+
+
+  .login-content input:focus {
+    outline: none;
+    border: 1px solid #9BD046;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-content .green-btn {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .logged-in-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+  .logged-in-container span {
+    margin-right: 0.5rem;
+  }
+
+  .login-title {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .login-title img {
+    height: 2.5rem;
+  }
+
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 85%;
+    right: 1.5%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    z-index: 1000;
+    opacity: 0; /* Initially set opacity to 0 */
+    visibility: hidden; /* Initially hide the dropdown */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add transition properties */
+    border-radius: 10px;
+  }
+  
+  .dropdown.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown li button {
+    background-color: white;
+    padding: 0.5rem;
+    border: none;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  .dropdown li button:hover {
+    background-color: gray;
+    border-radius: 10px;
+  }
+
+  
+  
+  .mt-1 { margin-top: 1em; }
+  .mb-1 { margin-bottom: 1em; }
+  .pt-1 { padding-top: 1em; }
+  .pb-1 { padding-bottom: 1em; }
+
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .container {
+      width: 95%;
+    }
+
+    table, th, td {
+        display: block;
+      }
+      
+      th, td {
+        text-align: right; /* Align text to the right on small screens */
+      }
+      
+      td::before {
+        /* Add a pseudo-element to act as a label for the content */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+      
+      td {
+        display: flex;
+        justify-content: space-between;
+        padding: .5em; /* Smaller padding on small screens */
+        border-bottom: 2px solid #ddd; /* Stronger border under each 'cell' */
+      }
+      
+      tr {
+        margin-bottom: 1em; /* Space out 'rows' */
+      }
+  }
+  

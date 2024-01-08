@@ -1,0 +1,39 @@
+.values {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.values-body {
+    margin: 5rem 0;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.values-text-container {
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.values-text-container h2 {
+    text-align: center;
+    color: #2B5E25;
+}
+
+.values-text-container p {
+    color:#2B5E25;
+}
+
+.values-text-container img {
+    height: 3rem;
+    margin: 0 20rem;
+}
+
+
+
+
+

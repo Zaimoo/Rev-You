@@ -1,0 +1,47 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-body {
+    margin: 5rem 0;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+
+.about-text-container {
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.about-text-container h2#title {
+    text-align: center;
+}
+
+.about-text-container h2 {
+    color: #2B5E25;
+}
+
+.about-text-container h3 {
+    color: #2B5E25;
+}
+
+.about-text-container p {
+    color:#2B5E25;
+}
+
+.about-text-container img {
+    height: 3rem;
+    margin: 0 20rem;
+}
+
+
+
+
+

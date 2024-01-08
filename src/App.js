@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FileUpload from './components/FileUpload';
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import { Route, Routes, BrowserRouter} from 'react-router-dom';
+import Result from './components/Result';
+import About from './components/About';
+import Values from './components/Values';
+import Login from './components/Login';
+import TermsOfService from './components/TermsOfService';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+        <Routes>
+          <Route path="/" element= {<Login />} />
+          <Route path="/home" element= {<MainContent />} />
+          <Route path="/reviewer-maker" element={<FileUpload />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/values" element={<Values />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path='/terms-of-service' element={<TermsOfService />} />
+        </Routes>
     </div>
+    </BrowserRouter>
+   
   );
 }
 
