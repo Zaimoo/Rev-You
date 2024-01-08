@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
       - name: npm ci
         run: npm ci
         env:
-         CI: false
+         CI: ""
 
       - name: Build and deploy
         run: npm run build
