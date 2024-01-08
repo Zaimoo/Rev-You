@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MainContent = () => {
   const hasToken = sessionStorage.getItem('token');
 
-  const link = hasToken ? '/reviewer-maker' : '/login';
+  const link = hasToken ? '/#/reviewer-maker' : '/#/login';
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/About.css'
-import aboutUs from './img/about-us.png';
-import paragraphBreak from './img/paragraph-break.png';
+import aboutUs from '../about-us.png';
+import paragraphBreak from '../paragraph-break.png';
 import Footer from './Footer';
 import './css/Values.css'
 const Values = () => {

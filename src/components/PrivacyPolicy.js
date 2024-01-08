@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/PrivacyPolicy.css'
-import aboutus from './img/about-us.png';
-import paragraphBreak from './img/paragraph-break.png';
+import aboutus from '../about-us.png';
+import paragraphBreak from '../paragraph-break.png';
 import Footer from './Footer';
 const PrivacyPolicy = () => {
     return (
