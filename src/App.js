@@ -13,7 +13,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
-    <BrowserRouter basename='/Revyou'>
+    <BrowserRouter basename='/revyou'>
     <div className="App">
       <Navbar />
         <Routes>
