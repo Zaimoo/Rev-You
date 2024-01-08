@@ -7,7 +7,7 @@ import name from  '../site-name.png';
 const Navbar = () => {
   const hasToken = sessionStorage.getItem('token');
 
-  const link = hasToken ? '#/reviewer-maker' : '#/login';
+  const link = hasToken ? 'reviewer-maker' : '/login';
 
   const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
