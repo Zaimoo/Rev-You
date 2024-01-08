@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Revyou/static/css/main.576c3e91.css",
-    "main.js": "/Revyou/static/js/main.bb03d86d.js",
+    "main.js": "/Revyou/static/js/main.8aef59e4.js",
     "static/media/logo.png": "/Revyou/static/media/logo.97f968d8490a934d5040.png",
     "static/media/loading.gif": "/Revyou/static/media/loading.433d31fe83b8b7429da2.gif",
     "static/media/upload-icon.png": "/Revyou/static/media/upload-icon.740f7466a6d390f4b56a.png",
@@ -10,10 +10,10 @@
     "static/media/paragraph-break.png": "/Revyou/static/media/paragraph-break.1d881827020c37a2d928.png",
     "index.html": "/Revyou/index.html",
     "main.576c3e91.css.map": "/Revyou/static/css/main.576c3e91.css.map",
-    "main.bb03d86d.js.map": "/Revyou/static/js/main.bb03d86d.js.map"
+    "main.8aef59e4.js.map": "/Revyou/static/js/main.8aef59e4.js.map"
   },
   "entrypoints": [
     "static/css/main.576c3e91.css",
-    "static/js/main.bb03d86d.js"
+    "static/js/main.8aef59e4.js"
   ]
 }
