@@ -42,3 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REACT_APP_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Debug GitHub Actions Environment Variable 
+        run: echo "${{ secrets.OPENAI_API_KEY }}"
+
