@@ -85,7 +85,7 @@
 
   .main-content {
     display: flex;
-    min-height: 37rem;
+    min-height: 40rem;
     background-color: #fff; /* Replace with the main content background color from your images */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
