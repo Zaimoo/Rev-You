@@ -27,15 +27,11 @@ jobs:
         env:
          CI: ""
 
-      - name: Build and deploy
-        run: npm run build
-        env:
-         CI: ""
-
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
           env:
+          CI = ""
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REACT_APP_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
