@@ -3,7 +3,8 @@ import './App.css';
 import FileUpload from './components/FileUpload';
 import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
-import { Route, Routes, BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Result from './components/Result';
 import About from './components/About';
 import Values from './components/Values';
@@ -13,7 +14,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
-    <BrowserRouter basename='/revyou'>
+    <Router basename='/revyou'>
     <div className="App">
       <Navbar />
         <Routes>
@@ -28,7 +29,7 @@ function App() {
           <Route path='/terms-of-service' element={<TermsOfService />} />
         </Routes>
     </div>
-    </BrowserRouter>
+    </Router>
    
   );
 }
