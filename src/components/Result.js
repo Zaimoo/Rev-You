@@ -13,11 +13,11 @@ const Result = () => {
   const [reviewer, setReviewer] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
-  const dummy = ["sk-Q9Pk0x", "WRe3P1BuKa48qQT3BlbkFJ", "ajb9P0gIGhgPDUwQf5nX"]
+  const dummy = ["sk-vZBjn1", "KTWGpTtixvoUXKT3BlbkFJ", "2LZjFEz5aE9oBA7hYsws"]
 
   const generateResponse = useCallback(async () => {
     const openai = new OpenAI({
-      apiKey: dummy.join(),
+      apiKey: dummy.join(""),
       dangerouslyAllowBrowser: true
     });
 
@@ -53,6 +53,7 @@ const Result = () => {
   useEffect(() => {
     if (text) {
       generateResponse();
+      console.log(dummy.join(""));
     }
   }, [text, generateResponse]);
 
