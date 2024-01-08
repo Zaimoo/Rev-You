@@ -22,16 +22,17 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: npm ci
-        run: npm ci
-        env:
-         CI: ""
 
-      - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-          env:
-          CI = false
+      - name: Build
+        run: npm run build
+        env:
+          CI: ""
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REACT_APP_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
