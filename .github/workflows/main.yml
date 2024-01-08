@@ -13,10 +13,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and deploy
+        run: npm run build
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           branch: gh-pages
+          folder: build
           clean: true
         env:
           REACT_APP_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
