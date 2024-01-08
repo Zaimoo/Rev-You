@@ -7,6 +7,7 @@ import Footer from './Footer';
 import loading from './loading.gif'
 
 const Result = () => {
+  // test
   const location = useLocation();
   const { text } = location.state || { text: '' };
   const [reviewer, setReviewer] = useState();
