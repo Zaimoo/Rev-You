@@ -7,7 +7,6 @@ import Footer from './Footer';
 import loading from './loading.gif'
 
 const Result = () => {
-  const openAIKey = process.env.REACT_APP_OPENAI_API_KEY;
   const location = useLocation();
   const { text } = location.state || { text: '' };
   const [reviewer, setReviewer] = useState();
@@ -15,7 +14,7 @@ const Result = () => {
 
   const generateResponse = useCallback(async () => {
     const openai = new OpenAI({
-      apiKey: openAIKey,
+      apiKey: process.env.REACT_APP_OPENAI_API_KEY,
       dangerouslyAllowBrowser: true
     });
 
