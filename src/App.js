@@ -3,7 +3,7 @@ import './App.css';
 import FileUpload from './components/FileUpload';
 import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Result from './components/Result';
 import About from './components/About';
@@ -14,7 +14,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
-    <Router basename='/revyou'>
+    <Router>
     <div className="App">
       <Navbar />
         <Routes>
