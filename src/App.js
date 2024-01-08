@@ -3,7 +3,7 @@ import './App.css';
 import FileUpload from './components/FileUpload';
 import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Result from './components/Result';
 import About from './components/About';
@@ -14,11 +14,11 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
-    <Router>
     <div className="App">
       <Navbar />
         <Routes>
           <Route path="/" element= {<Login />} />
+          <Route path="/revyou" element= {<Login />} />
           <Route path="/home" element= {<MainContent />} />
           <Route path="/reviewer-maker" element={<FileUpload />} />
           <Route path="/result" element={<Result />} />
@@ -29,7 +29,6 @@ function App() {
           <Route path='/terms-of-service' element={<TermsOfService />} />
         </Routes>
     </div>
-    </Router>
    
   );
 }
