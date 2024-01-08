@@ -53,7 +53,6 @@ const Result = () => {
   useEffect(() => {
     if (text) {
       generateResponse();
-      console.log(dummy.join(""));
     }
   }, [text, generateResponse]);
 

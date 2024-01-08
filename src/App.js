@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar />
         <Routes>
-          <Route path="/" element= {<Login />} />
+          <Route path="/" element= {<MainContent />} />
           <Route path="/revyou" element= {<Login />} />
           <Route path="/home" element= {<MainContent />} />
           <Route path="/reviewer-maker" element={<FileUpload />} />
