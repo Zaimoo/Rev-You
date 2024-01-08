@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.576c3e91.css",
-    "main.js": "/home/static/js/main.84e4a201.js",
-    "static/media/logo.png": "/home/static/media/logo.97f968d8490a934d5040.png",
-    "static/media/loading.gif": "/home/static/media/loading.433d31fe83b8b7429da2.gif",
-    "static/media/upload-icon.png": "/home/static/media/upload-icon.740f7466a6d390f4b56a.png",
-    "static/media/about-us.png": "/home/static/media/about-us.274327af0e2352455a4b.png",
-    "static/media/site-name.png": "/home/static/media/site-name.4c28ee87345a7edd127b.png",
-    "static/media/paragraph-break.png": "/home/static/media/paragraph-break.1d881827020c37a2d928.png",
-    "index.html": "/home/index.html",
-    "main.576c3e91.css.map": "/home/static/css/main.576c3e91.css.map",
-    "main.84e4a201.js.map": "/home/static/js/main.84e4a201.js.map"
+    "main.css": "/Revyou/static/css/main.576c3e91.css",
+    "main.js": "/Revyou/static/js/main.bb03d86d.js",
+    "static/media/logo.png": "/Revyou/static/media/logo.97f968d8490a934d5040.png",
+    "static/media/loading.gif": "/Revyou/static/media/loading.433d31fe83b8b7429da2.gif",
+    "static/media/upload-icon.png": "/Revyou/static/media/upload-icon.740f7466a6d390f4b56a.png",
+    "static/media/about-us.png": "/Revyou/static/media/about-us.274327af0e2352455a4b.png",
+    "static/media/site-name.png": "/Revyou/static/media/site-name.4c28ee87345a7edd127b.png",
+    "static/media/paragraph-break.png": "/Revyou/static/media/paragraph-break.1d881827020c37a2d928.png",
+    "index.html": "/Revyou/index.html",
+    "main.576c3e91.css.map": "/Revyou/static/css/main.576c3e91.css.map",
+    "main.bb03d86d.js.map": "/Revyou/static/js/main.bb03d86d.js.map"
   },
   "entrypoints": [
     "static/css/main.576c3e91.css",
-    "static/js/main.84e4a201.js"
+    "static/js/main.bb03d86d.js"
   ]
 }
