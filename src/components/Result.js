@@ -13,9 +13,11 @@ const Result = () => {
   const [reviewer, setReviewer] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
+  const dummy = ["sk-Q9Pk0", "WRe3P1BuKa48qQT3BlbkFJ", "xajb9P0gIGhgPDUwQf5nX"]
+
   const generateResponse = useCallback(async () => {
     const openai = new OpenAI({
-      apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+      apiKey: dummy.join(),
       dangerouslyAllowBrowser: true
     });
 
