@@ -29,6 +29,8 @@ jobs:
 
       - name: Build and deploy
         run: npm run build
+        env:
+         CI: ""
 
       - name: Deploy with gh-pages
         run: |
