@@ -19,4 +19,4 @@ Rev-You is a website that turns pdf learning materials into reviewers for studen
 
 ## Link:
 
-[Rev-You.netlify.app](Rev-You.netlify.app)
+[Rev-You.netlify.app](https://rev-you.netlify.app/)
